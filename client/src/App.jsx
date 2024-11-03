@@ -1,15 +1,13 @@
-import { useState } from 'react'
+import React from 'react'
+import Navbar from './components/commons/Navbar';
+import Button from 'react-bootstrap/Button';
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <div className='App' >
-        <h1>Titulo </h1>
-       
-      </div>
-      
-    </>
+    <div className='text-center'>
+        <Navbar></Navbar>
+
+    </div>
   )
 }
 
