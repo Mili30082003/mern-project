@@ -35,3 +35,27 @@
   object-fit: cover;
 
 }
+
+.container-hero {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.hero {
+
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(26, 25, 25);
+ 
+}
+
+.hero h2 {
+  font-size: 3em;
+}
+
+.boton-hero{
+  background-color: rgb(231, 188, 135);
+}

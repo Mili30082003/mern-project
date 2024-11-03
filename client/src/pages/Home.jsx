@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Hero from '../components/Hero';
+import Room from '../components/Room'
+
 
 const RoomList = () => {
     const [rooms, setRooms] = useState([]);
@@ -26,17 +29,8 @@ const RoomList = () => {
 
     return (
         <div>
-            <h1>Room List</h1>
-            <ul>
-                {rooms.map(room => (
-                    <li key={room._id}>
-                        <h2>{room.name}</h2>
-                        <p>{room.description}</p>
-                        <p>Price: ${room.rentperday} per day</p>
-                        <img src={room.imageurls[0]} alt={room.name} style={{ width: '100px' }} />
-                    </li>
-                ))}
-            </ul>
+           <Hero></Hero>
+           <Room rooms={rooms}></Room>
         </div>
     );
 };
