@@ -1,44 +1,45 @@
-import React, { useState, useEffect } from 'react';
-import axios from "axios";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
-const Home = () => {
+const RoomList = () => {
     const [rooms, setRooms] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState('');
 
     useEffect(() => {
         const fetchRooms = async () => {
             try {
-                const response = await axios.get('/api/rooms/getallrooms');
-                const data = response.data;
-                console.log(data);
-
-               
-                if (Array.isArray(data)) {
-                    setRooms(data);
-                } else {
-                    console.error("La respuesta no es un array:", data);
-                }
-            } catch (error) {
-                console.error("Error fetching rooms:", error);
+                const response = await axios.get('http://localhost:5000/api/rooms/getallrooms');
+                setRooms(response.data); // Guarda los datos en el estado
+                setLoading(false); // Cambia el estado de carga
+            } catch (err) {
+                setError('Error fetching rooms');
+                setLoading(false); // Cambia el estado de carga
             }
         };
 
         fetchRooms();
     }, []);
 
+    if (loading) return <div>Loading...</div>;
+    if (error) return <div>{error}</div>;
+
     return (
         <div>
-            <h1>Home</h1>
-            {rooms.length === 0 ? (
-                <p>No rooms available.</p>
-            ) : (
-                <ul>
-                    {rooms.map(room => (
-                        <li key={room.id}>{room.name}</li> 
-                    ))}
-                </ul>
-            )}
+            <h1>Room List</h1>
+            <ul>
+                {rooms.map(room => (
+                    <li key={room._id}>
+                        <h2>{room.name}</h2>
+                        <p>{room.description}</p>
+                        <p>Price: ${room.rentperday} per day</p>
+                        <img src={room.imageurls[0]} alt={room.name} style={{ width: '100px' }} />
+                    </li>
+                ))}
+            </ul>
         </div>
     );
 };
 
-export default Home;
+export default RoomList;
+
