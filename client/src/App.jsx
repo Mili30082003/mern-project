@@ -1,11 +1,13 @@
 import React from 'react'
 import Navbar from './components/commons/Navbar';
-import Button from 'react-bootstrap/Button';
+import Header from './components/commons/Header';
+
 
 const App = () => {
   return (
     <div className='text-center'>
         <Navbar></Navbar>
+        <Header></Header>
 
     </div>
   )

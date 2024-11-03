@@ -5,7 +5,7 @@
 
 }
 .Nav-container{
-  background-color: rgba(214, 190, 139, 0.637);
+  background-color: rgb(255, 255, 255);
   padding: 1em;
 
 
@@ -20,7 +20,7 @@
 .Nav-container .nav-link {
   padding: 10px 15px;
   transition: color 0.3s ease, transform 0.3s ease;
-  color: white;
+  color: rgb(54, 54, 53);
   
 }
 
@@ -30,3 +30,8 @@
   
 }
 
+.item-carousel{
+  height: 800px;
+  object-fit: cover;
+
+}
