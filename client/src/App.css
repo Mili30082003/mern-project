@@ -5,7 +5,7 @@
 
 }
 .Nav-container{
-  background-color: rgba(214, 190, 139, 0.5);
+  background-color: rgba(214, 190, 139, 0.637);
   padding: 1em;
 
 
@@ -14,3 +14,19 @@
 .Logo{
   height: 5.5vh;
 }
+
+
+
+.Nav-container .nav-link {
+  padding: 10px 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  color: white;
+  
+}
+
+.Nav-container .nav-link:hover {
+  color: rgb(221, 183, 78);
+  transform: scale(1.1); 
+  
+}
+
