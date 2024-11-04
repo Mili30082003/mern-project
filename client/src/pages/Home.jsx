@@ -32,6 +32,7 @@ const RoomList = () => {
 
     return (
         <div>
+           
               <Header />
            <Hero></Hero>
            <HotelServices></HotelServices>

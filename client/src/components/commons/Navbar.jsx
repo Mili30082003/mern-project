@@ -1,15 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Importa Link
+import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '/src/assets/img/logo-dark.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faImages, faInfoCircle, faBed, faUser, faPerson } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faImages, faInfoCircle, faBed, faUser } from '@fortawesome/free-solid-svg-icons';
 import '../../App.css';
 
 const CustomNavbar = () => {
+  const user = JSON.parse(localStorage.getItem('currentUser'));
+
   return (
     <Navbar expand="lg" className="Nav-container">
       <Container>
@@ -28,18 +30,32 @@ const CustomNavbar = () => {
               Galería
             </Nav.Link>
             <Nav.Link as={Link} to="/about">
-              <FontAwesomeIcon icon={faPerson} className="me-3" />
+              <FontAwesomeIcon icon={faInfoCircle} className="me-3" />
               Nosotros
             </Nav.Link>
             <Nav.Link as={Link} to="/rooms">
               <FontAwesomeIcon icon={faBed} className="me-3" />
               Habitaciones
             </Nav.Link>
-            <NavDropdown title={<><FontAwesomeIcon icon={faUser} className="me-3" /> Cuenta</>} id="basic-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/login">Login</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item as={Link} to="/register">Register</NavDropdown.Item>
-            </NavDropdown>
+
+            {user ? (
+              <NavDropdown title='Cuenta' id="basic-nav-dropdown">
+                <NavDropdown.Item as={Link} to="/profile">Perfil</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item onClick={() => {
+                  localStorage.removeItem('currentUser');
+                  window.location.reload();
+                }}>
+                  Cerrar sesión
+                </NavDropdown.Item>
+              </NavDropdown>
+            ) : (
+              <NavDropdown title={<><FontAwesomeIcon icon={faUser} className="me-3" /> Cuenta</>} id="basic-nav-dropdown">
+                <NavDropdown.Item as={Link} to="/login">Iniciar sesión</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item as={Link} to="/register">Registrarse</NavDropdown.Item>
+              </NavDropdown>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>
