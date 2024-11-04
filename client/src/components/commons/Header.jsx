@@ -26,7 +26,7 @@ const Header = () => {
  
     </Carousel.Item>
     
-    <Carousel.Item className='item-carousel'>
+    <Carousel.Item >
       <img
         className="d-block w-100"
         src={Imagen3} 
