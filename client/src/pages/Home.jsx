@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Header from '../components/commons/Header';
 import Hero from '../components/Hero';
 import HotelServices from '../components/HotelServices'
 import Banner from '../components/banner';
@@ -31,6 +32,7 @@ const RoomList = () => {
 
     return (
         <div>
+              <Header />
            <Hero></Hero>
            <HotelServices></HotelServices>
           <Banner></Banner>

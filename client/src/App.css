@@ -114,3 +114,44 @@
 .banner-button:hover {
   background-color: #705403; 
 }
+
+.boton-modal {
+  background-color: #705403;
+  border: #856404;
+}
+.boton-modal:hover {
+  background-color: #9e7704;
+  border: #856404;
+}
+
+.img-booking{
+  width: 900px;
+}
+
+.booking-container {
+  background-color: #f7f2e7; /* Light pastel brown background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding around the container */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.room-title {
+  font-size: 2.5rem;
+  color: #4e3b31; /* Darker pastel brown */
+  text-align: center;
+}
+
+.details-title, .amount-title {
+  font-size: 2rem;
+  color: #4e3b31; /* Darker pastel brown */
+}
+
+.booking-btn {
+  background-color: #b89a7b; /* Pastel brown button color */
+  border: none; /* No border */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.booking-btn:hover {
+  background-color: #a07c61; /* Darker shade on hover */
+}
