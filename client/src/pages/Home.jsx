@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Hero from '../components/Hero';
 import HotelServices from '../components/HotelServices'
+import Banner from '../components/banner';
 import Room from '../components/Room'
 
 
@@ -32,6 +33,7 @@ const RoomList = () => {
         <div>
            <Hero></Hero>
            <HotelServices></HotelServices>
+          <Banner></Banner>
            <Room rooms={rooms}></Room>
         </div>
     );

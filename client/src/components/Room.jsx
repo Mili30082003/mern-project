@@ -1,11 +1,11 @@
 import React from 'react';
-import { Card, Col, Row } from 'react-bootstrap';
-import { FaBed, FaDollarSign, FaInfoCircle } from 'react-icons/fa'; 
-import '../App.css'
+import { Card, Col, Row, Button } from 'react-bootstrap';
+import { FaBed, FaDollarSign, FaInfoCircle } from 'react-icons/fa';
+import '../App.css';
+
 const Room = ({ rooms }) => {
   return (
-    <div>
-      <h1 className="text-center mb-4">Lista de Habitaciones</h1>
+    <div className='container mt-5'>
       <Row xs={1} md={2} lg={3} className="g-4">
         {rooms.map(room => (
           <Col key={room._id}>
@@ -25,6 +25,9 @@ const Room = ({ rooms }) => {
                 <Card.Text>
                   <FaDollarSign /> Precio: ${room.rentperday} por día
                 </Card.Text>
+                <Button variant="primary" style={{ backgroundColor: '#b08968', borderColor: '#b08968' }}>
+                  Ver más
+                </Button>
               </Card.Body>
             </Card>
           </Col>
