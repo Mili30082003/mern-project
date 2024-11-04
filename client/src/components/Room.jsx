@@ -4,6 +4,12 @@ import { FaBed, FaDollarSign, FaInfoCircle } from 'react-icons/fa';
 import '../App.css';
 
 const Room = ({ rooms }) => {
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
   return (
     <div className='container mt-5'>
       <Row xs={1} md={2} lg={3} className="g-4">
