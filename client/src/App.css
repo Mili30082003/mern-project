@@ -59,3 +59,13 @@
 .boton-hero{
   background-color: rgb(231, 188, 135);
 }
+.service-button{
+  background-color: blanchedalmond;
+  color: black;
+  border: 0.1em solid burlywood;
+}
+.service-button:hover{
+  background-color: rgb(212, 156, 71);
+  color: black;
+  border: 0.1em solid burlywood;
+}
