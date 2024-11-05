@@ -40,7 +40,7 @@ const CustomNavbar = () => {
 
             {user ? (
               <NavDropdown title='Cuenta' id="basic-nav-dropdown">
-                <NavDropdown.Item as={Link} to="/profile">Perfil</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/AdminPanel">Perfil</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item onClick={() => {
                   localStorage.removeItem('currentUser');
