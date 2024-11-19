@@ -1,197 +1,38 @@
-*{
-  font-family: "Merriweather", serif;
-  font-weight: 300;
-  font-style: normal;
-
-}
-.Nav-container{
-  background-color: rgb(255, 255, 255);
-  padding: 1em;
-
-
+.App {
+  text-align: left;
 }
 
-.Logo{
-  height: 5.5vh;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-
-
-.Nav-container .nav-link {
-  padding: 10px 15px;
-  transition: color 0.3s ease, transform 0.3s ease;
-  color: rgb(54, 54, 53);
-  
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.Nav-container .nav-link:hover {
-  color: rgb(221, 183, 78);
-  transform: scale(1.1); 
-  
-}
-
-.item-carousel{
-  height: 800px;
-  object-fit: cover;
-
-}
-
-.container-hero {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-.hero {
-
-  height: 300px;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  color: rgb(26, 25, 25);
- 
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.hero h2 {
-  font-size: 3em;
+.App-link {
+  color: #61dafb;
 }
 
-.boton-hero{
-  background-color: rgb(231, 188, 135);
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-.service-button{
-  background-color: blanchedalmond;
-  color: black;
-  border: 0.1em solid burlywood;
-}
-.service-button:hover{
-  background-color: rgb(212, 156, 71);
-  color: black;
-  border: 0.1em solid burlywood;
-}
-
-.banner-container{
-  background-image: url('../../client/src/assets/img/heroSlider/3.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 450px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #0c0c0c;
-  text-align: start;
-  position: relative;
-}
-
-.banner-content {
-  background-color: rgba(255, 189, 91, 0.24);
-  padding: 25px;
-  border-radius: 10px;
-  max-width: 600px;
-}
-
-.banner-content h1 {
-  font-size: 3rem;
-  margin-bottom: 15px;
-}
-
-.banner-content p {
-  font-size: 1.4rem;
-  margin-bottom: 25px;
-}
-
-.banner-button {
-  background-color: #856404; 
-  color: #fff;
-  padding: 12px 24px;
-  font-size: 1.5rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.banner-button:hover {
-  background-color: #705403; 
-}
-
-.boton-modal {
-  background-color: #705403;
-  border: #856404;
-}
-.boton-modal:hover {
-  background-color: #9e7704;
-  border: #856404;
-}
-
-.img-booking{
-  width: 900px;
-}
-
-.booking-container {
-  background-color: #f7f2e7; /* Light pastel brown background */
-  border-radius: 10px; /* Rounded corners */
-  padding: 20px; /* Padding around the container */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.room-title {
-  font-size: 2.5rem;
-  color: #4e3b31; /* Darker pastel brown */
-  text-align: center;
-}
-
-.details-title, .amount-title {
-  font-size: 2rem;
-  color: #4e3b31; /* Darker pastel brown */
-}
-
-.booking-btn {
-  background-color: #b89a7b; /* Pastel brown button color */
-  border: none; /* No border */
-  transition: background-color 0.3s; /* Smooth transition */
-}
-
-.booking-btn:hover {
-  background-color: #a07c61; /* Darker shade on hover */
-}
-.custom-card {
-  background-color: #fff5e1; /* Color de fondo de la tarjeta */
-  border: 1px solid #d8b59c; /* Borde de la tarjeta */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-}
-
-.card-body {
-  padding: 20px; /* Espaciado interno */
-}
-
-.title {
-  color: #5d3a2a; /* Color del texto del encabezado */
-  font-weight: bold; /* Negrita */
-  margin-bottom: 20px; /* Espacio inferior */
-}
-
-.input-field {
-  border: 1px solid #d8b59c; /* Borde de los campos */
-  border-radius: 5px; /* Bordes redondeados */
-  margin-bottom: 15px; /* Espaciado entre campos */
-  padding: 10px; /* Espaciado interno */
-}
-
-.input-field:focus {
-  border-color: #8b5c3c; /* Color del borde en foco */
-  box-shadow: 0 0 5px rgba(139, 92, 60, 0.5); /* Sombra en foco */
-}
-
-.custom-button {
-  background-color: #8b5c3c; /* Color del botón */
-  border: none; /* Sin borde */
-  border-radius: 5px; /* Bordes redondeados para el botón */
-}
-
-.custom-button:hover {
-  background-color: #7a4c2a; /* Color del botón en hover */
-  cursor: pointer; /* Cambiar el cursor en hover */
-}
-

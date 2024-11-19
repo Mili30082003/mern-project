@@ -1,0 +1,86 @@
+[
+  {
+    "_id": {
+      "$oid": "6110ae308adb7a0ec49450ca"
+    },
+    "name": "Habitación Deluxe - Palermo Soho",
+    "imageurls": [
+      "https://www.i-escape.com/image/hotel/vain-boutique-hotel/overview/150362.jpg",
+      "https://images.abercrombiekent.com.au/images/_galleryLarge/villa-maria-cristina-hero-2.jpg",
+      "https://cdn.hotelplanner.com/Common/Images/Hotels/4278278_2.jpg"
+    ],
+    "rentperday": 3500,
+    "type": "Delux",
+    "maxcount": 3,
+    "phonenumber": 1134567890,
+    "currentbookings": [],
+    "description": "Esta habitación Deluxe es perfecta para aquellos que buscan lujo y comodidad en el vibrante barrio de Palermo, Buenos Aires. Con una decoración moderna y todas las comodidades de un hotel de alta gama, garantiza una estancia inolvidable."
+  },
+  {
+    "_id": {
+      "$oid": "6110ae308adb7a0ec49450cb"
+    },
+    "name": "Habitación Junior Suite - Palermo Soho",
+    "imageurls": [
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/eb/80/c1/hotel-noris-alausi.jpg?w=700&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/eb/80/c1/hotel-noris-alausi.jpg?w=700&h=-1&s=1"
+    ],
+    "rentperday": 5000,
+    "type": "Delux",
+    "maxcount": 2,
+    "phonenumber": 1145678901,
+    "currentbookings": [],
+    "description": "La Junior Suite ofrece una estancia más espaciosa y con servicios exclusivos. Con una decoración elegante y moderna, esta habitación está diseñada para quienes buscan una experiencia de lujo en el corazón de Palermo, rodeada de tiendas y restaurantes de moda."
+  },
+  {
+    "_id": {
+      "$oid": "6110ae308adb7a0ec49450cc"
+    },
+    "name": "Habitación Ejecutiva - Palermo Soho",
+    "imageurls": [
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/16/c2/56/caption.jpg?w=700&h=-1&s=1",
+      "https://th.bing.com/th/id/OIP.1krFrlX0cB4gJUcz4-DQogHaE7?w=800&h=533&rs=1&pid=ImgDetMain",
+      "https://th.bing.com/th/id/R.41a053e16bda803fc93d7cc5e7cc0eb6?rik=deMWiqYNtwRO6A&riu=http%3a%2f%2fphotos3.hotelsearch.com%2f0022%2f0989%2fguadiana-ciudad-real_big.jpg&ehk=WovaB79RyDie%2bUaOCOzf9e5QwfZfW%2fZslcmScTuwzyg%3d&risl=&pid=ImgRaw&r=0"
+    ],
+    "rentperday": 8000,
+    "type": "Non-Delux",
+    "maxcount": 3,
+    "phonenumber": 1134567892,
+    "currentbookings": [],
+    "description": "La Habitación Ejecutiva está diseñada para quienes buscan una opción de lujo y confort en una zona exclusiva. Con un diseño moderno y cómodo, ofrece todos los servicios necesarios para una estancia agradable en el vibrante Palermo, Buenos Aires."
+  },
+  {
+    "_id": {
+      "$oid": "6110ae308adb7a0ec49450cd"
+    },
+    "name": "Habitación Superior - Palermo Soho",
+    "imageurls": [
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/83/5e/51/hotel-don-juan-de-austria.jpg?w=1100&h=-1&s=1",
+      "https://www.theregency.com.my/TheregencyTTBR/Images/banners/1.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-s/02/15/69/fc/caption.jpg?w=900&h=-1&s=1"
+    ],
+    "rentperday": 6000,
+    "type": "Non-Delux",
+    "maxcount": 4,
+    "phonenumber": 1134567893,
+    "currentbookings": [],
+    "description": "La Habitación Superior es ideal para quienes buscan un equilibrio entre lujo y comodidad. Con un estilo moderno y servicios de alta gama, esta habitación ofrece una estancia relajante en uno de los barrios más exclusivos de Buenos Aires, Palermo."
+  },
+  {
+    "_id": {
+      "$oid": "6110ae308adb7a0ec49450ce"
+    },
+    "name": "Suite Presidencial - Palermo Soho",
+    "imageurls": [
+      "https://th.bing.com/th/id/OIP.0r_zL6HMVTXQRXh1glsCKwHaHa?w=500&h=500&rs=1&pid=ImgDetMain",
+      "https://th.bing.com/th/id/OIP.iQd13dAyyR0WN2v9h_NuRwHaFj?w=1280&h=960&rs=1&pid=ImgDetMain",
+      "https://th.bing.com/th/id/OIP.5wj6aJPKB2vweGPIdCLMjQHaEK?w=1166&h=656&rs=1&pid=ImgDetMain"
+    ],
+    "rentperday": 9000,
+    "type": "Delux",
+    "maxcount": 3,
+    "phonenumber": 1134567894,
+    "currentbookings": [],
+    "description": "La Suite Presidencial es la opción más exclusiva y lujosa del hotel. Con una vista impresionante de la ciudad, decoración sofisticada y todos los servicios de alta gama, esta habitación ofrece una experiencia única e inolvidable en el corazón de Palermo."
+  }
+]
